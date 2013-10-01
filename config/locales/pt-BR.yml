@@ -1,0 +1,78 @@
+pt-BR:
+  versions_for_sprints_not_created: "Para a criação de uso versões do projeto de sprint. Configurações -> Versões."
+  field_end_date: "Data Fim"
+  field_fact_close_date: "Data de Fechamento"
+  field_max_points: "Pontos Maximo"
+  scrumbler_menu: "Scrumbler"
+  scrumbler_sprint: "Sprint"
+  scrumbler_points_field: "Pontos Scrum"
+
+  show_opened: "Abrir"
+  show_all: "Todos Sprints"
+  label_general: "Geral"
+  label_sprints: "Sprints"
+  label_new_sprint: "Novo sprint:"
+  label_trackers: "Trackers"
+  label_issue_statuses: "Status da Tarefa"
+  label_sprint_back: "Voltar para o Sprint"
+  label_backlog: "Backlog"
+  label_sprint_settings: "Configuraçoes do Sprint"
+  label_statistics: "Estatísticas"
+  label_confirm_sprint_opening: "Tem certeza que deseja abrir um Sprint?"
+  label_header_error: "Erro"
+  label_header_warning: "Aviso"
+  issue_action_on_sprint_closing: "O que fazer com as Tarefas que não estão fechadas?"
+  close_issues: "Fechar todas as tarefas do Sprint"
+  move_issues_to_backlog: "Mover para backlog"
+  opened_issues_in_closing_sprint: "Existe algumas tarefas não fechadas no Sprint."
+
+  issue_not_assigned: "Não Atribuída"
+
+  tracker_use?: "Usar?"
+  error_scrumbler_general_update: "Configurações de atualização falhou"
+  error_scrumbler_trackers_update: "Atualização Trackers falhou"
+  error_scrumbler_issue_statuses_update: "Status de Tarefa de atualização falhou"
+  error_sprint_not_found_in_project: "Sprint não foi encontrado no projeto"
+  error_scrumbler_issue_status_change: "Você não tem permissão para alterar o Status \"%{status_name}\" desta tarefa"
+  error_sprint_not_found: "Sprint não encontrada"
+
+  scrumbler_statistics:
+    ideal_issues: "Ideal"
+    actual_issues: "Atual"
+    iteration_axis: "Cronograma da Interação"
+    estimated_axis: "Trabalho Estimado"
+
+  scrumbler_sprint_statistics_not_available: "Atenção! As estatísticas não estão disponíveis. Sprint deve ser aberto e fornecido a data inicial e final para o sprint."
+
+  scrumbler_sprint_opened: "Aberto"
+  scrumbler_sprint_planning: "Planejando"
+  scrumbler_sprint_closed: "Fechado"
+
+  activerecord:
+    errors:
+      models:
+        issue:
+          attributes:
+            base:
+              tracker_error: "Tracker não existe neste Sprint"
+              sprint_not_planning_error: "Tarefa pode ser atribuída somente ao planejamento sprint"
+              sprint_is_closed_error: "Não é possível editar tarefa fechada em Sprint"
+              sprint_points_limit_error: "Limite de pontos excedido"
+        scrumbler_sprint:
+          attributes:
+            base:
+              start_date_is_greater_than_end_date: "Data Inicio não pode ser maior que a Final."
+              trackers_with_issues_in_sprint_cant_be_removed: "Não é possível remover Tracker de sprint. Tracker não está vazio."
+              sprint_without_project: "Não é possível criar Sprint sem projeto"
+              closing_sprint_with_opened_issues: "Não é possível fechar Sprint com Tarefas abertas."
+              cant_open_sprint_without_issues: "Não é possível abrir Sprint sem Tarefas."
+              sprint_points_limit_error: "Limite de pontos excedido"
+            status:
+              only_one_opened: "erro. Apenas um Sprint pode ser aberto em um projeto"
+  active_record:
+    models:
+      scrumbler_sprint_tracker:
+        position: "Posição"
+        color: "Cor"
+      scrumbler_sprint_status:
+        position: "Posição"

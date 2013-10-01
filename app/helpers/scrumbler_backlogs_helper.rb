@@ -19,7 +19,7 @@ module ScrumblerBacklogsHelper
     issues.sort {|a,b|
       v1 = a.try(:custom_value_for, ScrumblerIssueCustomField.priority).try(:value).to_i
       v2 = b.try(:custom_value_for, ScrumblerIssueCustomField.priority).try(:value).to_i
-      v1==v2 ? b.priority <=> a.priority : v2 <=> v1 
+      v1==v2 ? b.priority <=> a.priority : v2 <=> v1
 
     }
   end
